@@ -30,11 +30,17 @@ body {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    display : block;
+    text-align : center;
+    /* changed display from 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center; 
+    to
+        display : block;*/
   }
   nav li {
+    display: block;
     margin: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
   }
@@ -69,12 +75,15 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
   }
+  /*article's flex-basis was changed from 73% to 100%*/
   article {
-    flex-basis: 73%;
+    flex-basis: 100%;
   }
+   /*figure's flex-basis was changed to 100%, centered*/
   figure {
     margin: 3rem 0 0 0;
-    flex-basis: 25%;
+    text-align: center;
+    flex-basis: 100%;
     background-color: #59331d;
     border-radius: 10px;
   }
@@ -87,6 +96,7 @@ body {
     padding: 0.5rem;
   }
   .button {
+    flex-basis: 100%;
     display: inline-block;
     background-color: #59331D;
     border-radius: 10px;
@@ -99,6 +109,11 @@ body {
   .button:hover {
     background-color: #f2f2f2;
     color: #59331d;
+  }
+  .photo {
+    margin: 0;
+    text-align: center;
+    flex-basis: 100%;
   }
   footer {
     color: #f2f2f2;
@@ -118,4 +133,25 @@ body {
     font-size: 2rem;
     display: block;
     margin: 0 1rem 3rem 1rem;
+  }
+  /*if the screen size is 790px or larger, 
+  the nav style is changed to be horizontal. artical and figure will be shown in thes ame row (73% : 27%) */
+  @media (min-width:790px) {
+    .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    }
+    article {
+        flex-basis: 73%;
+    }
+    figure {
+        flex-basis: 27%;
+    }
+    .address {
+        flex-basis: 50%;
+    }
+    .photo {
+        flex-basis: 50%;   
+    }
   }
