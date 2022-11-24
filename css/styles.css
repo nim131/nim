@@ -103,7 +103,6 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
   }
-
   .product-body {
     max-width: 1200px;
     margin: 0 auto;
@@ -111,17 +110,20 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
   }
   .head{
     flex-basis:100%;
-    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
   .product {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    
   }
   .product-item {
     /*max-width: 1800px;*/
