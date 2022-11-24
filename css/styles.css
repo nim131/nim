@@ -1,3 +1,12 @@
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  } 
 body {
     background-color: #082B59;
     margin: 0;
@@ -26,6 +35,11 @@ body {
     border-bottom: 10px solid #d98555;
   }
   /* navbar styling */
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    }
   nav ul {
     padding: 0;
     margin: 0;
@@ -75,6 +89,30 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
   }
+
+  .product-body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border : 1px solid red;
+  }
+  .head{
+    flex-basis:100%;
+    border : 1px solid red;
+  }
+  .product {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border : 1px solid red;
+  }
+  .product-item {
+    max-width: 1800px;
+    border: 1px solid red;
+  }
   /*article's flex-basis was changed from 73% to 100%*/
   article {
     flex-basis: 100%;
@@ -119,6 +157,7 @@ body {
     color: #f2f2f2;
     text-align: center;
     border-top: 10px solid #d98555;
+    font-size: 0.8rem;
   }
   footer ul {
     list-style-type: none;
@@ -134,9 +173,13 @@ body {
     display: block;
     margin: 0 1rem 3rem 1rem;
   }
+  
   /*if the screen size is 790px or larger, 
   the nav style is changed to be horizontal. artical and figure will be shown in thes ame row (73% : 27%) */
   @media (min-width:790px) {
+    nav li {
+        text-align: center;
+      }
     .container {
     display: flex;
     flex-flow: row wrap;
@@ -154,4 +197,39 @@ body {
     .photo {
         flex-basis: 50%;   
     }
-  }
+}
+@media (min-width:990px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        }
+    nav .logo {
+        grid-column: 1/2;
+        padding :2rem 0rem 0rem 0rem;
+        text-align: start;
+        }
+    nav .item {
+        grid-column : 3/4;
+        padding :6rem 0rem 0rem 0rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: right;
+    }
+    .product-body {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        }
+        .head{
+            flex-basis:100%;
+        }    
+    .product  {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 350px auto;
+        grid-template-rows: 250px auto;
+        }
+    }
+    
+  
