@@ -75,9 +75,8 @@ body {
     color: #d98555;
   }
   /* establishes a white background */
-
-  .home-bkgd {
-    background: #ffffff url(https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80) repeat-x bottom;
+   .home-bkgd {
+    background: #ffffff url(/images/coffee-shop-interior2.jpg) repeat-x bottom;
     padding-bottom: 300px;
   }
 
@@ -242,6 +241,11 @@ body {
     }
     .photo {
         flex-basis: 50%;   
+    }
+    figure img {
+         max-width: 100%;
+         width: auto !important;
+         height: auto;
     }
 }
 @media (min-width:990px) {
