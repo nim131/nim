@@ -93,8 +93,7 @@ body {
     background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
     padding-bottom: 300px;
   }
-
-  /* sits inside of the white background, centered */
+  /* located inside of the white background, centered */
   .main {
     max-width: 1200px;
     margin: 0 auto;
@@ -222,7 +221,7 @@ body {
   @media (min-width:570px) {
     nav li {
         text-align: center;
-      }
+    }
     .container {
         display: flex;
         flex-flow: row wrap;
@@ -234,13 +233,13 @@ body {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-      }
+    }
     .box {
         max-width: 570px;
         margin : 1rem;
         padding : 0.5rem 0.5rem 0.5rem 0.5rem;
         background-color: $border_btn-color;
-      }
+    }
     article {
         flex-basis: 73%;
     }
