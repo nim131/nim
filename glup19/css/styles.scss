@@ -42,6 +42,11 @@ body {
     border-bottom: 10px solid $secondary-headfoot-color;
   }
   /* navbar styling */
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
   nav {
     ul {
       padding: 0;
@@ -60,36 +65,30 @@ body {
       margin: 0 1rem 1rem 1rem;
       font-size: 1.3rem;
     } 
-    .container {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-    }
     /* flex basis on the image container, li */
     .logo {
       flex-basis: 100%;
       text-align: center;       
     /* max width on the image in pixels */
-        img {
+      img {
              max-width: 150px;
-        }
-      } 
+      }
+    } 
     a {
       color: #ffffff;
       text-decoration: none;
-      display: block;
-    
+      display: block;    
       &:hover {
         color: $secondary-headfoot-color;
       }
     }
   }
-  /* establishes a white background */
+  /* link a background picture to index.html page */
   .home-bkgd {
     background: #ffffff url(https://github.com/nim131/nim/blob/main/images/coffee-shop-interior2.jpg?raw=true) repeat-x bottom;
     padding-bottom: 300px;
   }
-
+  /* link a background to about, contact, product.html pages */
   .main-bkgd {
     background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
     padding-bottom: 300px;

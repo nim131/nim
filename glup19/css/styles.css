@@ -43,6 +43,12 @@ header {
 }
 
 /* navbar styling */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 nav {
   /* flex basis on the image container, li */
 }
@@ -63,11 +69,6 @@ nav li {
   margin: 0 1rem 1rem 1rem;
   font-size: 1.3rem;
 }
-nav .container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
 nav .logo {
   flex-basis: 100%;
   text-align: center;
@@ -85,12 +86,13 @@ nav a:hover {
   color: #d98555;
 }
 
-/* establishes a white background */
+/* link a background picture to index.html page */
 .home-bkgd {
   background: #ffffff url(https://github.com/nim131/nim/blob/main/images/coffee-shop-interior2.jpg?raw=true) repeat-x bottom;
   padding-bottom: 300px;
 }
 
+/* link a background to about, contact, product.html pages */
 .main-bkgd {
   background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
   padding-bottom: 300px;
