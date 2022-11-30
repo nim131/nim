@@ -208,7 +208,7 @@ body {
     margin: 0 1rem 3rem 1rem;
   }
   
-  /*if the screen size is 790px or larger, 
+  /*if the screen size is 570px or larger, 
   the nav style is changed to be horizontal. artical and figure will be shown in thes ame row (73% : 27%) */
   @media (min-width:570px) {
     nav li {
