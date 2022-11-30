@@ -1,10 +1,25 @@
   $primary-font : 'Lato', sans-serif;
   $secondary-font : 'Poppins', sans-serif;
-  $radius : 10px;
   $primary-headfoot-color : #082B59;
   $secondary-headfoot-color : #d98555;
   $border_btn-color : #59331d;
   $bkgd-color : #f2f2f2;
+  $radius : 10px;
+
+  @mixin nospace {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  @mixin cntr-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  @mixin multibox-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
   
 html {
     box-sizing: border-box;
@@ -16,8 +31,7 @@ html {
   } 
 body {
     background-color: $primary-headfoot-color;
-    margin: 0;
-    padding: 0;
+    @include nospace;
     font-family: $primary-font;
     line-height: 2;
 }
@@ -43,14 +57,11 @@ body {
   }
   /* navbar styling */
   .container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    @include cntr-flex;
   }
   nav {
     ul {
-      padding: 0;
-      margin: 0;
+      @include nospace;
       list-style-type: none;
       display : block;
       text-align : center;
@@ -98,40 +109,29 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include multibox-flex;
   }
   .home-main {       
     max-width: 1200px;
     background-color: $bkgd-color;
     margin: 0 auto;
     padding: 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include multibox-flex;
   }
   .product-body {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    @include nospace;
+    @include cntr-flex;
   }
   .head{
     flex-basis:100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include multibox-flex;
   }
   .product {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include multibox-flex;
   }
   .product-item {
     /*max-width: 1800px;*/
@@ -173,7 +173,7 @@ body {
     }
   }
   .photo {
-    margin: 0;
+    @include nospace;
     text-align: center;
     flex-basis: 100%;
   }
@@ -202,11 +202,8 @@ body {
     font-size: 0.8rem;
     ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    @include nospace;
+    @include cntr-flex;
     }
     a {
     color:  $bkgd-color;
@@ -223,16 +220,12 @@ body {
         text-align: center;
     }
     .container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+      @include cntr-flex;
     }
     .container2 {
         margin : 2.5rem 0rem 0rem 0rem;
         padding : 0;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        @include cntr-flex;
     }
     .box {
         max-width: 570px;
@@ -276,16 +269,13 @@ body {
         justify-content: right;
         }
     .product-body {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+        @include multibox-flex;
         }
     .head{
         flex-basis:100%;
         }    
     .product  {
-        margin: 0;
-        padding: 0;
+      @include nospace;
         display: grid;
         grid-template-columns: 350px auto;
         grid-template-rows: 250px auto;

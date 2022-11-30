@@ -10,8 +10,8 @@ html {
 
 body {
   background-color: #082B59;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   font-family: "Lato", sans-serif;
   line-height: 2;
 }
@@ -53,8 +53,8 @@ nav {
   /* flex basis on the image container, li */
 }
 nav ul {
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   list-style-type: none;
   display: block;
   text-align: center;
@@ -121,7 +121,7 @@ nav a:hover {
 .product-body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -188,7 +188,8 @@ figcaption {
 }
 
 .photo {
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   text-align: center;
   flex-basis: 100%;
 }
@@ -220,8 +221,8 @@ footer {
 }
 footer ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -301,8 +302,8 @@ the nav style is changed to be horizontal. artical and figure will be shown in t
     flex-basis: 100%;
   }
   .product {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
     display: grid;
     grid-template-columns: 350px auto;
     grid-template-rows: 250px auto;
