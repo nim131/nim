@@ -164,7 +164,6 @@ figure {
   background-color: #59331d;
   border-radius: 10px;
 }
-
 figure img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -223,7 +222,6 @@ footer {
   border-top: 10px solid #d98555;
   font-size: 0.8rem;
 }
-
 footer ul {
   list-style-type: none;
   padding: 0;
@@ -232,7 +230,6 @@ footer ul {
   flex-flow: row wrap;
   justify-content: center;
 }
-
 footer a {
   color: #f2f2f2;
   font-size: 2rem;
