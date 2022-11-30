@@ -9,8 +9,8 @@
   $std-fontsize: 1rem;
 
   @mixin nospace {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
   }
   @mixin cntr-flex {
     display: flex;
