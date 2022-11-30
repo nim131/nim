@@ -284,6 +284,11 @@ the nav style is changed to be horizontal. artical and figure will be shown in t
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
+  .box {
+    margin: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #59331d;
+  }
   nav .logo {
     grid-column: 1/2;
     padding: 2rem 0rem 0rem 0rem;
