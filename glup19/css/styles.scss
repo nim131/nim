@@ -7,11 +7,13 @@
   $radius : 10px;
   $std-space: 1rem;
   $std-fontsize: 1rem;
+  $about-leftclm-ratio: 73%;
+  $contact-leftclm-ratio: 50%;
 
   @mixin nospace {
     margin: 0;
     padding: 0;
-  }
+  }  
   @mixin cntr-flex {
     display: flex;
     flex-flow: row wrap;
@@ -237,16 +239,16 @@ body {
         background-color: $border_btn-color;
     }
     article {
-        flex-basis: 73%;
+        flex-basis: $about-leftclm-ratio;
     }
     figure {
-        flex-basis: 27%;
+        flex-basis: 100% - $about-leftclm-ratio;
     }
     .address {
-        flex-basis: 50%;
+        flex-basis: $contact-leftclm-ratio;
     }
     .photo {
-        flex-basis: 50%;   
+        flex-basis: 100% - $contact-leftclm-ratio;   
     }
     figure img {
          max-width: 100%;
