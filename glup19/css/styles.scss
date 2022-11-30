@@ -5,6 +5,8 @@
   $border_btn-color : #59331d;
   $bkgd-color : #f2f2f2;
   $radius : 10px;
+  $std-space: 1rem;
+  $std-fontsize: 1rem;
 
   @mixin nospace {
     margin: 0 auto;
@@ -30,8 +32,8 @@ html {
     box-sizing: inherit;
   } 
 body {
-    background-color: $primary-headfoot-color;
     @include nospace;
+    background-color: $primary-headfoot-color;
     font-family: $primary-font;
     line-height: 2;
 }
@@ -39,7 +41,7 @@ body {
     font-family: $secondary-font;
   }
   h1 {
-    font-size: 2rem;
+    font-size: $std-fontsize * 2;
     margin-bottom: 0;
   }
   /* make images be flexible */
@@ -73,8 +75,8 @@ body {
     }
     li {
       display: block;
-      margin: 0 1rem 1rem 1rem;
-      font-size: 1.3rem;
+      margin: 0 $std-space $std-space $std-space;
+      font-size: $std-fontsize * 1.3;
     } 
     /* flex basis on the image container, li */
     .logo {
@@ -108,14 +110,14 @@ body {
   .main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: $std-space * 2;
     @include multibox-flex;
   }
   .home-main {       
     max-width: 1200px;
     background-color: $bkgd-color;
     margin: 0 auto;
-    padding: 2rem;
+    padding: $std-space * 2;
     @include multibox-flex;
   }
   .product-body {
@@ -127,7 +129,7 @@ body {
     flex-basis:100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: $std-space * 2;
     @include multibox-flex;
   }
   .product {
@@ -135,7 +137,7 @@ body {
   }
   .product-item {
     /*max-width: 1800px;*/
-    padding : 1rem;
+    padding : $std-space;
   }
   /*article's flex-basis was changed from 73% to 100%*/
   article {
@@ -143,7 +145,7 @@ body {
   }
    /*figure's flex-basis was changed to 100%, centered*/
   figure {
-    margin: 3rem 0 0 0;
+    margin: $std-space * 3 0 0 0;
     text-align: center;
     flex-basis: 100%;
     background-color: $border_btn-color;
@@ -155,14 +157,14 @@ body {
   }
   figcaption {
     color: $bkgd-color;
-    padding: 0.5rem;
+    padding: $std-space * 0.5;
   }
   .button {
     flex-basis: 100%;
     display: inline-block;
     background-color: $border_btn-color;
     border-radius: $radius;
-    padding: 0.5rem 1rem;
+    padding: $std-space * 0.5 $std-space;
     margin: 0;
     color: $bkgd-color;
     text-decoration: none;
@@ -182,7 +184,7 @@ body {
   srcset="https://assets.codepen.io/6306176/gulp-logo-light.png 7000w" sizes="((min-width: 50em) and (max-width: 60em)) 50em" alt="light_logo">
 */
   .container2 {
-    margin : 2.5rem 0rem 0rem 0rem;
+    margin : $std-space * 2.5 0rem 0rem 0rem;
     padding : 0;
     display: flex;
     flex-flow: column wrap;
@@ -190,8 +192,8 @@ body {
   }
   /*multiple identical (image) boxes are displayed side by side.*/
   .box {
-    margin : 1rem;
-    padding : 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin : $std-space;
+    padding : $std-space * 0.5;
     background-color: $border_btn-color;
   }
   
@@ -199,7 +201,7 @@ body {
     color:  $bkgd-color;
     text-align: center;
     border-top: 10px solid $secondary-headfoot-color;
-    font-size: 0.8rem;
+    font-size: $std-fontsize * 0.8;
     ul {
     list-style-type: none;
     @include nospace;
@@ -207,9 +209,9 @@ body {
     }
     a {
     color:  $bkgd-color;
-    font-size: 2rem;
+    font-size: $std-fontsize * 2;
     display: block;
-    margin: 0 1rem 3rem 1rem;
+    margin: 0 $std-space $std-space * 3 $std-space;
     }
   }
   
@@ -223,14 +225,14 @@ body {
       @include cntr-flex;
     }
     .container2 {
-        margin : 2.5rem 0rem 0rem 0rem;
+        margin : $std-space * 2.5 0rem 0rem 0rem;
         padding : 0;
         @include cntr-flex;
     }
     .box {
         max-width: 570px;
-        margin : 1rem;
-        padding : 0.5rem 0.5rem 0.5rem 0.5rem;
+        margin : $std-space;
+        padding : $std-space * 0.5;
         background-color: $border_btn-color;
     }
     article {
@@ -258,12 +260,12 @@ body {
         }
     nav .logo {
         grid-column: 1/2;
-        padding :2rem 0rem 0rem 0rem;
+        padding :$std-space * 2 0rem 0rem 0rem;
         text-align: start;
         }
     nav .item {
         grid-column : 3/4;
-        padding :6rem 0rem 0rem 0rem;
+        padding :$std-space * 6 0rem 0rem 0rem;
         display: flex;
         flex-flow: row wrap;
         justify-content: right;
