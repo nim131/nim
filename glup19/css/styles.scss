@@ -122,7 +122,8 @@ body {
   }
   .product-body {
     max-width: 1200px;
-    @include nospace;
+    margin: 0 auto;
+    padding: 0;
     @include cntr-flex;
   }
   .head{
