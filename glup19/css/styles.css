@@ -43,12 +43,6 @@ header {
 }
 
 /* navbar styling */
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
 nav {
   /* flex basis on the image container, li */
 }
@@ -68,6 +62,11 @@ nav li {
   display: block;
   margin: 0 1rem 1rem 1rem;
   font-size: 1.3rem;
+}
+nav .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 nav .logo {
   flex-basis: 100%;
@@ -181,7 +180,6 @@ figcaption {
   text-decoration: none;
   border: 3px solid #59331d;
 }
-
 .button:hover {
   background-color: #f2f2f2;
   color: #59331d;
