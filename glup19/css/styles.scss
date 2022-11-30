@@ -24,7 +24,7 @@ body {
     font-size: 2rem;
     margin-bottom: 0;
   }
-  /* make images flexible */
+  /* make images be flexible */
   img {
     max-width: 100%;
   }
@@ -43,40 +43,42 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     }
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display : block;
-    text-align : center;
-    /* changed display from 
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center; 
-    to
-        display : block;*/
-  }
-  nav li {
-    display: block;
-    margin: 0 1rem 1rem 1rem;
-    font-size: 1.3rem;
-  }
-  /* max width on the image in pixels */
-  nav .logo img {
-    max-width: 150px;
-  }
-  /* flex basis on the image container, li */
-  nav .logo {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  nav a:hover {
-    color: #d98555;
+  nav {
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display : block;
+      text-align : center;
+      /* changed display from 
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center; 
+         to  display : block;*/
+    }
+    li {
+      display: block;
+      margin: 0 1rem 1rem 1rem;
+      font-size: 1.3rem;
+    } 
+    /* flex basis on the image container, li */
+    .logo {
+      flex-basis: 100%;
+      text-align: center;       
+    /* max width on the image in pixels */
+        img {
+             max-width: 150px;
+        }
+      } 
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    
+      &:hover {
+        color: #d98555;
+      }
+    }
   }
   /* establishes a white background */
   .home-bkgd {
@@ -144,7 +146,6 @@ body {
     flex-basis: 100%;
     background-color: #59331d;
     border-radius: $radius;
-  
     img {
     border-top-left-radius: $radius;
     border-top-right-radius: $radius;
@@ -259,11 +260,6 @@ body {
     .container {
         display: grid;
         grid-template-columns: 1fr 3fr;
-        }
-    .box {
-        margin : 1rem;
-        padding : 0.5rem 0.5rem 0.5rem 0.5rem;
-        background-color: #59331d;
         }
     nav .logo {
         grid-column: 1/2;
