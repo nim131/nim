@@ -115,7 +115,7 @@ body {
   }
   .home-main {       
     max-width: 1200px;
-    background-color: $bkgd-color;
+    background-color: rgba(242, 242, 242, 0.8);
     margin: 0 auto;
     padding: $std-space * 2;
     @include multibox-flex;
