@@ -23,11 +23,12 @@ body {
   img {
     max-width: 100%;
   }
+  /*nesting a link*/
   a {
     color: $border_btn-color;
-  }
-  a:hover {
+    &:hover {
     text-decoration: none;
+    }
   }
   header {
     border-bottom: 10px solid $secondary-headfoot-color;
