@@ -10,9 +10,9 @@
   $about-leftclm-ratio: 73%;
   $contact-leftclm-ratio: 50%;
 
-  @mixin nospace {
-    margin: 0;
-    padding: 0;
+  @mixin space ($margin: 0, $padding: 0){
+    margin: $margin;
+    padding: $padding;
   }  
   @mixin cntr-flex {
     display: flex;
@@ -34,7 +34,7 @@ html {
     box-sizing: inherit;
   } 
 body {
-    @include nospace;
+    @include space;
     background-color: $primary-headfoot-color;
     font-family: $primary-font;
     line-height: 2;
@@ -65,7 +65,7 @@ body {
   }
   nav {
     ul {
-      @include nospace;
+      @include space;
       list-style-type: none;
       display : block;
       text-align : center;
@@ -111,28 +111,26 @@ body {
   /* located inside of the white background, centered */
   .main {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: $std-space * 2;
+    @include space ($margin:0 auto, $padding:$std-space * 2);
+    //margin: 0 auto;
+    //padding: $std-space * 2;
     @include multibox-flex;
   }
   .home-main {       
     max-width: 1200px;
     background-color: rgba(242, 242, 242, 0.8);
-    margin: 0 auto;
-    padding: $std-space * 2;
+    @include space ($margin:0 auto, $padding:$std-space * 2);
     @include multibox-flex;
   }
   .product-body {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
+    @include space ($margin:0 auto);
     @include cntr-flex;
   }
   .head{
     flex-basis:100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: $std-space * 2;
+    @include space ($margin:0 auto, $padding:$std-space * 2);
     @include multibox-flex;
   }
   .product {
@@ -167,8 +165,9 @@ body {
     display: inline-block;
     background-color: $border_btn-color;
     border-radius: $radius;
-    padding: $std-space * 0.5 $std-space;
-    margin: 0;
+    @include space ($padding:$std-space * 0.5 $std-space);
+    //padding: $std-space * 0.5 $std-space;
+    //margin: 0;
     color: $bkgd-color;
     text-decoration: none;
     border: 3px solid $border_btn-color;
@@ -178,7 +177,7 @@ body {
     }
   }
   .photo {
-    @include nospace;
+    @include space;
     text-align: center;
     flex-basis: 100%;
   }
@@ -187,16 +186,18 @@ body {
   srcset="https://assets.codepen.io/6306176/gulp-logo-light.png 7000w" sizes="((min-width: 50em) and (max-width: 60em)) 50em" alt="light_logo">
 */
   .container2 {
-    margin : $std-space * 2.5 0rem 0rem 0rem;
-    padding : 0;
+    @include space ($margin : $std-space * 2.5 0rem 0rem 0rem);
+    //margin : $std-space * 2.5 0rem 0rem 0rem;
+    //padding : 0;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
   }
   /*multiple identical (image) boxes are displayed side by side.*/
   .box {
-    margin : $std-space;
-    padding : $std-space * 0.5;
+    @include space ($margin : $std-space, $padding : $std-space * 0.5);
+    //margin : $std-space;
+    //padding : $std-space * 0.5;
     background-color: $border_btn-color;
   }
   
@@ -207,7 +208,7 @@ body {
     font-size: $std-fontsize * 0.8;
     ul {
     list-style-type: none;
-    @include nospace;
+    @include space;
     @include cntr-flex;
     }
     a {
@@ -228,14 +229,16 @@ body {
       @include cntr-flex;
     }
     .container2 {
-        margin : $std-space * 2.5 0rem 0rem 0rem;
-        padding : 0;
-        @include cntr-flex;
+      @include space ($margin : $std-space * 2.5 0rem 0rem 0rem);
+      // margin : $std-space * 2.5 0rem 0rem 0rem;
+      // padding : 0;
+      @include cntr-flex;
     }
     .box {
         max-width: 570px;
-        margin : $std-space;
-        padding : $std-space * 0.5;
+        @include space ($margin : $std-space, $padding : $std-space * 0.5);
+        //margin : $std-space;
+        //padding : $std-space * 0.5;
         background-color: $border_btn-color;
     }
     article {
@@ -280,7 +283,7 @@ body {
         flex-basis:100%;
         }    
     .product  {
-      @include nospace;
+      @include space;
         display: grid;
         grid-template-columns: 350px auto;
         grid-template-rows: 250px auto;
