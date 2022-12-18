@@ -168,6 +168,9 @@ article {
   flex-basis: 100%;
 }
 
+.carousel-item {
+  text-align: center;
+}
 /*figure's flex-basis was changed to 100%, centered*/
 figure {
   margin: 3rem 0 0 0;
