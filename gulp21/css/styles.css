@@ -82,9 +82,24 @@ nav a:hover {
   color: #d98555;
 }
 
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
 .navbar .navbar-nav .nav-link:hover {
   color: #d98555;
 }
+
+
+/*
+span .icon-light{
+  color: #fff;
+}
+
+.navbar-toggler-icon{
+  color : #fff;
+}
+*/
 
 /* link a background picture to index.html page */
 .home-bkgd {
@@ -217,6 +232,7 @@ footer {
   color: #f2f2f2;
   text-align: center;
   border-top: 10px solid #d98555;
+  padding-top: 1rem;
   font-size: 0.8rem;
 }
 footer ul {
