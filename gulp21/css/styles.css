@@ -48,10 +48,6 @@ header {
   flex-flow: row wrap;
   justify-content: center;
 }
-
-nav {
-  /* flex basis on the image container, li */
-}
 nav ul {
   margin: 0;
   padding: 0;
@@ -83,6 +79,10 @@ nav a {
   display: block;
 }
 nav a:hover {
+  color: #d98555;
+}
+
+.navbar .navbar-nav .nav-link:hover {
   color: #d98555;
 }
 
@@ -234,9 +234,9 @@ footer a {
   margin: 0 1rem 3rem 1rem;
 }
 
-/*if the screen size is 570px or larger, 
+/*if the screen size is 720px or larger, 
   the nav style is changed to be horizontal. artical and figure will be shown in thes ame row (73% : 27%) */
-@media (min-width: 570px) {
+@media (min-width: 720px) {
   nav li {
     text-align: center;
   }
@@ -253,7 +253,7 @@ footer a {
     justify-content: center;
   }
   .box {
-    max-width: 570px;
+    max-width: 720px;
     margin: 1rem;
     padding: 0.5rem;
     background-color: #59331d;
@@ -276,7 +276,7 @@ footer a {
     height: auto;
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 1440px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -308,4 +308,5 @@ footer a {
     grid-template-columns: 350px auto;
     grid-template-rows: 250px auto;
   }
+
 }/*# sourceMappingURL=styles.css.map */

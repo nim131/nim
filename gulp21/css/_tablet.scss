@@ -1,6 +1,6 @@
-/*if the screen size is 570px or larger, 
+/*if the screen size is 720px or larger, 
   the nav style is changed to be horizontal. artical and figure will be shown in thes ame row (73% : 27%) */
-@media (min-width:570px) {
+@media (min-width:720px) {
     nav li {
         text-align: center;
     }
@@ -11,10 +11,10 @@
       @include space ($margin : $std-space * 2.5 0rem 0rem 0rem);
       // margin : $std-space * 2.5 0rem 0rem 0rem;
       // padding : 0;
-      @include cntr-flex;
+      @include multibox-flex;
     }
     .box {
-        max-width: 570px;
+        max-width: 720px;
         @include space ($margin : $std-space, $padding : $std-space * 0.5);
         //margin : $std-space;
         //padding : $std-space * 0.5;

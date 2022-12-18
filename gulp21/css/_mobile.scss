@@ -72,6 +72,14 @@ body {
       }
     }
   }
+
+  .navbar .brand, .navbar .nav > li > a {
+    color: #ffffff;
+    &hover {
+      color: $secondary-headfoot-color;
+    }
+}
+
   /* link a background picture to index.html page */
   .home-bkgd {
     background: #ffffff url(https://github.com/nim131/nim/blob/main/images/coffee-shop-interior2.jpg?raw=true) repeat-x bottom;
