@@ -1,0 +1,40 @@
+/*if the screen size is 570px or larger, 
+  the nav style is changed to be horizontal. artical and figure will be shown in thes ame row (73% : 27%) */
+@media (min-width:570px) {
+    nav li {
+        text-align: center;
+    }
+    .container {
+      @include cntr-flex;
+    }
+    .container2 {
+      @include space ($margin : $std-space * 2.5 0rem 0rem 0rem);
+      // margin : $std-space * 2.5 0rem 0rem 0rem;
+      // padding : 0;
+      @include cntr-flex;
+    }
+    .box {
+        max-width: 570px;
+        @include space ($margin : $std-space, $padding : $std-space * 0.5);
+        //margin : $std-space;
+        //padding : $std-space * 0.5;
+        background-color: $border_btn-color;
+    }
+    article {
+        flex-basis: $about-leftclm-ratio;
+    }
+    figure {
+        flex-basis: 100% - $about-leftclm-ratio;
+    }
+    .address {
+        flex-basis: $contact-leftclm-ratio;
+    }
+    .photo {
+        flex-basis: 100% - $contact-leftclm-ratio;   
+    }
+    figure img {
+         max-width: 100%;
+         width: auto !important;
+         height: auto;
+    }
+}
