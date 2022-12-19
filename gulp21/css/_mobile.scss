@@ -8,7 +8,7 @@ html {
   } 
 body {
     @include space;
-    background-color: $primary-headfoot-color;
+    background-color: $bkgd-color;
     font-family: $primary-font;
     line-height: 2;
 }
