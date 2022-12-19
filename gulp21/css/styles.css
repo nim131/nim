@@ -11,8 +11,16 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #082B59;
+  background-color: #f2f2f2;
   font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+.body-topbtm {
+  margin: 0;
+  padding: 0;
+  background-color: #082B59;
+  font-family: "Poppins", sans-serif;
   line-height: 2;
 }
 
@@ -39,7 +47,7 @@ a:hover {
 }
 
 header {
-  border-bottom: 10px solid #d98555;
+  border-bottom: 8px solid #d98555;
 }
 
 /* navbar styling */
@@ -190,19 +198,19 @@ figcaption {
 }
 
 .button {
-  flex-basis: 100%;
+  flex-basis: 20%;
   display: inline-block;
   background-color: #59331d;
-  border-radius: 10px;
+  border-radius: 16px;
   margin: 0;
-  padding: 0.5rem 1rem;
-  color: #f2f2f2;
+  padding: 18px 44px 18px 44px;
+  color: #ffffff;
   text-decoration: none;
-  border: 3px solid #59331d;
+  /*border: 3px solid #59331d;*/
 }
 .button:hover {
-  background-color: #f2f2f2;
-  color: #59331d;
+  background-color: #d98555;
+  color: #ffffff;
 }
 
 .photo {
@@ -224,6 +232,28 @@ figcaption {
   justify-content: center;
 }
 
+.home_p {
+  padding: 5rem;
+  font-size: 1.2rem;
+}
+/*
+.homebtn {
+  flex-basis: 100%;
+  display: inline-block;
+  background-color: #59331d;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+.homebtn:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+*/
+
 /*multiple identical (image) boxes are displayed side by side.*/
 .box {
   margin: 1rem;
@@ -234,8 +264,8 @@ figcaption {
 footer {
   color: #f2f2f2;
   text-align: center;
-  border-top: 10px solid #d98555;
-  padding-top: 1rem;
+  border-top: 8px solid #d98555;
+  /*padding-top: 1rem;*/
   font-size: 0.8rem;
 }
 footer ul {
