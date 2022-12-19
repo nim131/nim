@@ -123,7 +123,7 @@ span .icon-light{
 
 /* located inside of the white background, centered */
 .main {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
   display: flex;
@@ -132,7 +132,7 @@ span .icon-light{
 }
 
 .home-main {
-  max-width: 1200px;
+  max-width: 1400px;
   background-color: rgba(242, 242, 242, 0.8);
   margin: 0 auto;
   padding: 2rem;
@@ -142,22 +142,42 @@ span .icon-light{
 }
 
 .product-body {
-  max-width: 1200px;
+  max-width: auto;
   margin: 0 auto;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  background-color:#E7BA1D;
+}
+
+.map {
+  max-width: auto;
+  padding: 2rem auto;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color:#E7BA1D;
+}
+
+
+.contact-bkgd{
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0;
+  background-color:#D98555;
 }
 
 .head {
   flex-basis: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  border-bottom: 8px dotted #59331d;
 }
 
 .product {
@@ -184,12 +204,10 @@ figure {
   margin: 3rem 0 0 0;
   text-align: center;
   flex-basis: 100%;
-  background-color: #59331d;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 figure img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 16px;
 }
 
 figcaption {
@@ -216,6 +234,8 @@ figcaption {
 .photo {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-flow: column wrap;
   text-align: center;
   flex-basis: 100%;
 }
@@ -231,10 +251,27 @@ figcaption {
   flex-flow: column wrap;
   justify-content: center;
 }
+.product-list{
+  padding : 2rem;
+}
+.card-body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
 
 .home_p {
   padding: 5rem;
   font-size: 1.2rem;
+}
+
+.about_p {
+  padding: 3rem 4rem 0 0;
+  font-size: 1.2rem;
+}
+
+.product1 {
+  font-size:25px ;
 }
 /*
 .homebtn {
@@ -284,7 +321,7 @@ footer a {
 }
 
 /*if the screen size is 720px or larger, 
-  the nav style is changed to be horizontal. artical and figure will be shown in thes ame row (73% : 27%) */
+  the nav style is changed to be horizontal. artical and figure will be shown in thes ame row (70% : 30%) */
 @media (min-width: 720px) {
   nav li {
     text-align: center;
@@ -302,23 +339,35 @@ footer a {
     justify-content: center;
   }
   .box {
-    max-width: 720px;
+    max-width: 100%;
     margin: 1rem;
     padding: 0.5rem;
-    background-color: #59331d;
+    border-radius : 16px;
   }
   article {
-    flex-basis: 73%;
+    flex-basis: 70%;
   }
   figure {
-    flex-basis: 27%;
+    flex-basis: 30%;
   }
   .address {
-    flex-basis: 50%;
+    flex-basis: 30%;
   }
   .photo {
-    flex-basis: 50%;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    /*
+    flex-flow: column wrap;*/
+    flex-basis: 70%;
+    border-radius: 16px;
   }
+  
+  .photo_item{
+    border-radius: 16px;
+  }
+
   figure img {
     max-width: 100%;
     width: auto !important;
@@ -326,10 +375,10 @@ footer a {
   }
 }
 @media (min-width: 1440px) {
-  .container {
+  /*.container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-  }
+  }*/
   nav .logo {
     grid-column: 1/2;
     padding: 2rem 0rem 0rem 0rem;
@@ -347,9 +396,9 @@ footer a {
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  .head {
+  /*.head {
     flex-basis: 100%;
-  }
+  }*/
   .product {
     margin: 0;
     padding: 0;
