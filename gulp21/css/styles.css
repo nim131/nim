@@ -36,6 +36,7 @@ h1 {
 /* make images be flexible */
 img {
   max-width: 100%;
+  border-radius: 16px;
 }
 
 /*nesting a link*/
@@ -153,7 +154,7 @@ span .icon-light{
 
 .map {
   max-width: auto;
-  padding: 2rem auto;
+  padding: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
