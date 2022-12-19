@@ -1,0 +1,17 @@
+//space(margin and padding are repeating across the whole coding, set default values 0 for margin and padding)
+@mixin space ($margin: 0, $padding: 0){
+    margin: $margin;
+    padding: $padding;
+}  
+//center flex is repeating, used this "cntr-flex" mixin.
+@mixin cntr-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+//for all "multiple boxes(=cards)" web flame, used this "multibox-flex" mixin. 
+@mixin multibox-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+ }
